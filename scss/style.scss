@@ -1,0 +1,23 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --container-width: 1170px;
+  --container-offset: 0 15px;
+
+  --color-accent: ;
+
+  --font-size: 16px;
+  --font-weight: normal;
+  --font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+}
