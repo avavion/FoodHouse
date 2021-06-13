@@ -7,17 +7,68 @@
 }
 
 :root {
-  --container-width: 1170px;
+  --container-width: 1670px;
   --container-offset: 0 15px;
 
   --color-accent: ;
 
-  --font-size: 16px;
+  --font-size: 18px;
   --font-weight: normal;
-  --font-family: "Montserrat", sans-serif;
+  --font-family: "Montserrat Alternates", sans-serif;
 }
 
 body {
   font-size: var(--font-size);
   font-family: var(--font-family);
+}
+
+.flex {
+  display: flex;
+
+  @for $i from 1 through 10 {
+    &-#{$i} {
+      flex: #{$i};
+    }
+  }
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.grid {
+  display: grid;
+  &-column {
+    @for $column from 1 through 10 {
+      &-#{$column} {
+        grid-template-columns: repeat(#{$column}, 1fr);
+      }
+    }
+  }
+}
+
+ul,
+ol {
+  display: flex;
+  list-style: none;
 }
