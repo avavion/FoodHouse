@@ -7,10 +7,12 @@
 }
 
 :root {
-  --container-width: 1670px;
-  --container-offset: 0 15px;
+  --container-width: 1680px;
+  --container-offset: 15px;
 
-  --color-accent: ;
+  --color-black: #232323;
+  --color-orange: #fe8c01;
+  --color-grey: #818282;
 
   --font-size: 18px;
   --font-weight: normal;
@@ -27,6 +29,7 @@ body {
 
   @for $i from 1 through 10 {
     &-#{$i} {
+      display: flex;
       flex: #{$i};
     }
   }
@@ -56,6 +59,10 @@ body {
   justify-content: flex-end;
 }
 
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
 .grid {
   display: grid;
   &-column {
@@ -71,4 +78,52 @@ ul,
 ol {
   display: flex;
   list-style: none;
+}
+
+a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 var(--container-offset);
+  margin: 0 auto;
+}
+
+.orange {
+  color: var(--color-orange);
+}
+
+.header {
+  &-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0;
+  }
+  &-list {
+    &-item {
+      font-size: 20px;
+      color: var(--color-grey);
+      font-weight: 500;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      .active {
+        font-weight: 700;
+        color: var(--color-orange);
+      }
+    }
+  }
+}
+
+.navbar {
+  &-logo {
+    &__link {
+      font-weight: 800;
+      font-size: 42px;
+    }
+  }
 }
