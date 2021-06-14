@@ -66,18 +66,51 @@
               justify-content-end
             "
           >
-            <a href="/cart.html" class="header-cart__link navbar-cart__link">
-              <img src="assets/icons/icon-cart.svg" alt="Корзина" />
+            <a
+              href="/cart.html"
+              class="header-cart__link navbar-cart__link active"
+              id="cart"
+            >
+              <img
+                class="navbar-cart__icon header-cart__icon"
+                src="assets/icons/icon-cart.svg"
+                alt="Корзина"
+              />
+              <div class="navbar-cart-counter header-cart-counter">
+                <span
+                  class="navbar-cart__count header-cart__count"
+                  id="cart-count"
+                >
+                  12
+                </span>
+              </div>
             </a>
           </div>
         </nav>
-        <div class="header-hero hero"></div>
+        <div class="header-hero hero">
+          <div class="hero-content">
+            <p class="hero__text orange">Экспресс-доставка от Яндекс.Еды</p>
+            <h1 class="hero__title">
+              Быстро и вкусно<span class="orange">.</span>
+            </h1>
+            <p class="hero__text">Сеть быстрого питания #1 в Казани</p>
+            <div class="hero-buttons">
+              <button class="button button--orange hero__button">
+                Сделать заказ
+              </button>
+              <p class="hero-buttons__text grey">
+                бесплатная доставка<br>от 500 рублей
+              </p>
+            </div>
+          </div>
+          <div class="hero-banner"></div>
+        </div>
       </div>
     </header>
 
     <footer class="footer" id="footer">
       <div class="container"></div>
     </footer>
-    <script src="scripts/app.js" defer></script>
+    <script src="scripts/index.js" defer></script>
   </body>
 </html>

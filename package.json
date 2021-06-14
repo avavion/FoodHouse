@@ -1,0 +1,23 @@
+{
+  "name": "foodhouse",
+  "version": "1.0.0",
+  "description": "FoodHouse - best fast food seller",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avavion/FoodHouse.git"
+  },
+  "keywords": [
+    "fastfood",
+    "foodhouse"
+  ],
+  "author": "avavion.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avavion/FoodHouse/issues"
+  },
+  "homepage": "https://github.com/avavion/FoodHouse#readme"
+}
