@@ -131,6 +131,11 @@ a {
   color: var(--color-grey);
 }
 
+.circle {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
 .header {
   min-height: 100vh;
   &-navbar {
@@ -196,6 +201,20 @@ a {
   align-items: center;
   &-banner {
     width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    &__wrapper {
+      width: 670px;
+      height: 670px;
+      border: 15px solid var(--color-orange);
+    }
+    &__image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
   }
   &-content {
     width: 50%;

@@ -5,4 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Навигационное меню
     const navbar = header.querySelector("#navbar");
     
+
+    localStorage.getItem("whishlist")
 });
