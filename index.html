@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/5c55b6f969.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>FoodHouse - фастфуд #1 в Казани</title>
   </head>
@@ -70,6 +74,7 @@
               href="/cart.html"
               class="header-cart__link navbar-cart__link active"
               id="cart"
+              data-cart-counter="12"
             >
               <img
                 class="navbar-cart__icon header-cart__icon"
@@ -116,8 +121,243 @@
       </div>
     </header>
 
+    <section class="section collection" id="menu">
+      <div class="container">
+        <div class="section-header collection-header">
+          <h2 class="section-header__title">
+            Наше Меню
+            <span class="underline"></span>
+          </h2>
+        </div>
+        <div class="collection-content">
+          <ul class="collection-filter filter">
+            <!-- Start -->
+
+            <li class="collection-filter-item filter-item _active">
+              <img src="assets/icons/icon-salad.svg" alt="Salad" />
+              <h3 class="collection-filter-item__title filter-item__title">
+                Салаты
+              </h3>
+            </li>
+
+            <li class="collection-filter-item filter-item">
+              <img src="assets/icons/icon-burger.svg" alt="Burger" />
+              <h3 class="collection-filter-item__title filter-item__title">
+                Бургеры
+              </h3>
+            </li>
+
+            <li class="collection-filter-item filter-item">
+              <img src="assets/icons/icon-pizza.svg" alt="Pizza" />
+              <h3 class="collection-filter-item__title filter-item__title">
+                Пицца
+              </h3>
+            </li>
+
+            <li class="collection-filter-item filter-item">
+              <img src="assets/icons/icon-drink.svg" alt="Drink" />
+              <h3 class="collection-filter-item__title filter-item__title">
+                Напитки
+              </h3>
+            </li>
+
+            <li class="collection-filter-item filter-item">
+              <img src="assets/icons/icon-french-free.svg" alt="Potato" />
+              <h3 class="collection-filter-item__title filter-item__title">
+                Картошка
+              </h3>
+            </li>
+
+            <li class="collection-filter-item filter-item">
+              <img src="assets/icons/icon-discount.svg" alt="Discount" />
+              <h3 class="collection-filter-item__title filter-item__title">
+                Скидки
+              </h3>
+            </li>
+            <!-- End -->
+          </ul>
+
+          <ul class="collection-list">
+            <!-- Start -->
+            <li class="collection-item">
+              <img
+                src="assets/images/salad_1.jpg"
+                alt=""
+                class="collection-item__image"
+              />
+              <div class="collection-item-info">
+                <h3 class="collection-item__title">Салат “Греческий”</h3>
+                <p class="collection-item__portion">300 грамм - 1 порция</p>
+                <p class="collection-item__description">
+                  36 - белков, 11 - жиров, 55 - углеводов
+                </p>
+                <button class="collection-item__button button--addToCart">
+                  Добавить в корзину
+                </button>
+              </div>
+            </li>
+            <li class="collection-item">
+              <img
+                src="assets/images/salad_2.jpg"
+                alt=""
+                class="collection-item__image"
+              />
+              <div class="collection-item-info">
+                <h3 class="collection-item__title">Салат “Греческий”</h3>
+                <p class="collection-item__portion">300 грамм - 1 порция</p>
+                <p class="collection-item__description">
+                  36 - белков, 11 - жиров, 55 - углеводов
+                </p>
+                <button class="collection-item__button button--addToCart">
+                  Добавить в корзину
+                </button>
+              </div>
+            </li>
+            <li class="collection-item">
+              <img
+                src="assets/images/salad_3.jpg"
+                alt=""
+                class="collection-item__image"
+              />
+              <div class="collection-item-info">
+                <h3 class="collection-item__title">Салат “Греческий”</h3>
+                <p class="collection-item__portion">300 грамм - 1 порция</p>
+                <p class="collection-item__description">
+                  36 - белков, 11 - жиров, 55 - углеводов
+                </p>
+                <button class="collection-item__button button--addToCart">
+                  Добавить в корзину
+                </button>
+              </div>
+            </li>
+            <li class="collection-item">
+              <img
+                src="assets/images/salad_5.jpg"
+                alt=""
+                class="collection-item__image"
+              />
+              <div class="collection-item-info">
+                <h3 class="collection-item__title">Салат “Греческий”</h3>
+                <p class="collection-item__portion">300 грамм - 1 порция</p>
+                <p class="collection-item__description">
+                  36 - белков, 11 - жиров, 55 - углеводов
+                </p>
+                <button class="collection-item__button button--addToCart">
+                  Добавить в корзину
+                </button>
+              </div>
+            </li>
+
+            <li class="collection-item">
+              <img
+                src="assets/images/salad_6.jpg"
+                alt=""
+                class="collection-item__image"
+              />
+              <div class="collection-item-info">
+                <h3 class="collection-item__title">Салат “Греческий”</h3>
+                <p class="collection-item__portion">300 грамм - 1 порция</p>
+                <p class="collection-item__description">
+                  36 - белков, 11 - жиров, 55 - углеводов
+                </p>
+                <button class="collection-item__button button--addToCart">
+                  Добавить в корзину
+                </button>
+              </div>
+            </li>
+            <li class="collection-item">
+              <img
+                src="assets/images/salad_1.jpg"
+                alt=""
+                class="collection-item__image"
+              />
+              <div class="collection-item-info">
+                <h3 class="collection-item__title">Салат “Греческий”</h3>
+                <p class="collection-item__portion">300 грамм - 1 порция</p>
+                <p class="collection-item__description">
+                  36 - белков, 11 - жиров, 55 - углеводов
+                </p>
+                <button class="collection-item__button button--addToCart">
+                  Добавить в корзину
+                </button>
+              </div>
+            </li>
+            <li class="collection-item">
+              <img
+                src="assets/images/salad_2.jpg"
+                alt=""
+                class="collection-item__image"
+              />
+              <div class="collection-item-info">
+                <h3 class="collection-item__title">Салат “Греческий”</h3>
+                <p class="collection-item__portion">300 грамм - 1 порция</p>
+                <p class="collection-item__description">
+                  36 - белков, 11 - жиров, 55 - углеводов
+                </p>
+                <button class="collection-item__button button--addToCart">
+                  Добавить в корзину
+                </button>
+              </div>
+            </li>
+            <li class="collection-item">
+              <img
+                src="assets/images/salad_3.jpg"
+                alt=""
+                class="collection-item__image"
+              />
+              <div class="collection-item-info">
+                <h3 class="collection-item__title">Салат “Греческий”</h3>
+                <p class="collection-item__portion">300 грамм - 1 порция</p>
+                <p class="collection-item__description">
+                  36 - белков, 11 - жиров, 55 - углеводов
+                </p>
+                <button class="collection-item__button button--addToCart">
+                  Добавить в корзину
+                </button>
+              </div>
+            </li>
+
+            <!-- End -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer" id="footer">
-      <div class="container"></div>
+      <div class="container">
+        <nav class="navbar footer-navbar flex justify-content-space-between">
+          <div class="footer-logo navbar-logo">
+            <a href="#header" class="footer-logo__link navbar-logo__link">
+              <span class="orange">Food</span>House
+            </a>
+          </div>
+          <ul
+            class="
+              list
+              footer-list
+              navbar-list
+              align-items-center
+              justify-content-center
+            "
+          >
+            <!-- START -->
+            <li class="list-item footer-list-item">
+              <a
+                href="https://vk.com/avavion"
+                class="list-item__link footer-list-item__link active"
+              >
+                <i class="fab fa-vk"></i>
+              </a>
+            </li>
+            <li class="list-item footer-list-item">
+              <a href="/" class="list-item__link footer-list-item__link">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <!-- END -->
+          </ul>
+        </nav>
+      </div>
     </footer>
     <script src="scripts/index.js" defer></script>
   </body>
