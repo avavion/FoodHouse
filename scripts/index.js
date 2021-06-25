@@ -9,8 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const services_slider = new Swiper(".services", {
         slidesPerView: 1,
         spaceBetween: 30,
-        speed: 1000,
+        speed: 500,
         slidesPerGroup: 1,
+        autoplay: true,
         breakpoints: {
             768: {
                 slidesPerView: 4,
