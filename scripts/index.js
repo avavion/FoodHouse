@@ -4,5 +4,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector("#header");
     // Навигационное меню
     const navbar = header.querySelector("#navbar");
-    
+
+    // Слайдер
+    const services_slider = new Swiper(".services", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        speed: 1000,
+        slidesPerGroup: 1,
+        breakpoints: {
+            768: {
+                slidesPerView: 4,
+                slidesPerGroup: 4
+            },
+            1440: {
+                slidesPerView: 5,
+                slidesPerGroup: 5
+            },
+            568: {
+                slidesPerView: 3,
+                slidesPerGroup: 3
+            }
+        },
+    });
 });

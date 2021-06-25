@@ -8,7 +8,7 @@
 
 :root {
   --container-width: 1680px;
-  --container-offset: 15px;
+  --container-offset: 30px;
 
   --color-black: #232323;
   --color-orange: #fe8c01;
@@ -281,6 +281,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 60px;
     &__title {
       text-align: center;
       font-style: normal;
@@ -399,7 +400,6 @@ a {
     }
   }
   &-filter {
-    margin-top: 60px;
     margin-bottom: 90px;
     display: grid;
     grid-template-columns: repeat(6, minmax(200px, 1fr));
@@ -432,6 +432,10 @@ a {
       }
     }
   }
+  &__button {
+    margin-top: 60px;
+    padding: 20px 70px;
+  }
 }
 
 .footer {
@@ -453,6 +457,27 @@ a {
       }
     }
   }
+}
+
+.services {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: var(--color-lightblue);
+  border-radius: 16px;
+  // &__image {
+  // }
+  // &__title {
+  // }
+  // &__text {
+  // }
 }
 
 @media screen and (max-width: 1420px) {
@@ -490,5 +515,115 @@ a {
 
   .section {
     padding: 50px 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &-list {
+      display: none;
+    }
+  }
+
+  .collection {
+    &-filter {
+      grid-template-columns: repeat(2, 1fr);
+      &-item {
+        &__title {
+          font-size: 18px;
+        }
+      }
+    }
+    &-item {
+      &__title {
+        font-size: 28px;
+      }
+      &__portion {
+        font-size: 14px;
+      }
+      &__description {
+        font-size: 10px;
+      }
+      &__button {
+        font-size: 18px;
+      }
+    }
+    &-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .hero {
+    &__title {
+      font-size: 82px;
+    }
+    &-buttons {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__button {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    &-content {
+      width: 100%;
+    }
+    &-banner {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-logo__link {
+    font-size: 36px;
+  }
+  .section {
+    &-header {
+      &__title {
+        font-size: 42px;
+      }
+    }
+  }
+
+  .hero {
+    &__title {
+      font-size: 56px;
+    }
+    &-buttons {
+      width: 100%;
+      align-items: stretch;
+    }
+    &__button {
+      padding: 15px 0px;
+      width: 100%;
+    }
+  }
+
+  .collection {
+    &-filter {
+      grid-auto-rows: auto;
+      gap: 15px;
+      &-item {
+        & img {
+          height: 64px;
+        }
+      }
+    }
+    &-list {
+      gap: 10px;
+      grid-auto-rows: 250px;
+    }
+    &-item {
+      &-info {
+        padding: 10px;
+      }
+      &__title {
+        font-size: 16px;
+      }
+      &__portion {
+        display: none;
+      }
+    }
   }
 }

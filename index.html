@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/5c55b6f969.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>FoodHouse - фастфуд #1 в Казани</title>
   </head>
@@ -40,22 +41,25 @@
           >
             <!-- START -->
             <li class="list-item header-list-item">
-              <a href="/" class="list-item__link header-list-item__link active">
+              <a
+                href="#header"
+                class="list-item__link header-list-item__link active"
+              >
                 Главная
               </a>
             </li>
             <li class="list-item header-list-item">
-              <a href="/" class="list-item__link header-list-item__link">
+              <a href="#menu" class="list-item__link header-list-item__link">
                 Меню
               </a>
             </li>
             <li class="list-item header-list-item">
-              <a href="/" class="list-item__link header-list-item__link">
+              <a href="#service" class="list-item__link header-list-item__link">
                 Сервис
               </a>
             </li>
             <li class="list-item header-list-item">
-              <a href="/" class="list-item__link header-list-item__link">
+              <a href="#about" class="list-item__link header-list-item__link">
                 О нас
               </a>
             </li>
@@ -319,6 +323,107 @@
 
             <!-- End -->
           </ul>
+          <div class="flex row align-items-center justify-content-center">
+            <button class="button button--lightblue collection__button">
+              Показать больше
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header about-header">
+          <h2 class="section-header__title">
+            О нас <span class="underline"></span>
+          </h2>
+        </div>
+
+        <div class="section-content"></div>
+      </div>
+    </section>
+
+    <section class="section service-section" id="service">
+      <div class="container">
+        <div class="section-header service-header">
+          <h2 class="section-header__title">
+            Сервис <span class="underline"></span>
+          </h2>
+        </div>
+
+        <div class="section-content">
+          <div class="swiper-container services">
+            <ul class="swiper-wrapper">
+              <!-- Start -->
+              <li class="service swiper-slide">
+                <img src="" alt="Service Image" class="service__image" />
+                <h3 class="service__title">Наименование</h3>
+                <p class="service__text">Текстовое описание</p>
+              </li>
+
+              <li class="service swiper-slide">
+                <img src="" alt="Service Image" class="service__image" />
+                <h3 class="service__title">Наименование</h3>
+                <p class="service__text">Текстовое описание</p>
+              </li>
+
+              <li class="service swiper-slide">
+                <img src="" alt="Service Image" class="service__image" />
+                <h3 class="service__title">Наименование</h3>
+                <p class="service__text">Текстовое описание</p>
+              </li>
+
+              <li class="service swiper-slide">
+                <img src="" alt="Service Image" class="service__image" />
+                <h3 class="service__title">Наименование</h3>
+                <p class="service__text">Текстовое описание</p>
+              </li>
+
+              <li class="service swiper-slide">
+                <img src="" alt="Service Image" class="service__image" />
+                <h3 class="service__title">Наименование</h3>
+                <p class="service__text">Текстовое описание</p>
+              </li>
+
+              <li class="service swiper-slide">
+                <img src="" alt="Service Image" class="service__image" />
+                <h3 class="service__title">Наименование</h3>
+                <p class="service__text">Текстовое описание</p>
+              </li>
+
+              <li class="service swiper-slide">
+                <img src="" alt="Service Image" class="service__image" />
+                <h3 class="service__title">Наименование</h3>
+                <p class="service__text">Текстовое описание</p>
+              </li>
+
+              <li class="service swiper-slide">
+                <img src="" alt="Service Image" class="service__image" />
+                <h3 class="service__title">Наименование</h3>
+                <p class="service__text">Текстовое описание</p>
+              </li>
+
+              <li class="service swiper-slide">
+                <img src="" alt="Service Image" class="service__image" />
+                <h3 class="service__title">Наименование</h3>
+                <p class="service__text">Текстовое описание</p>
+              </li>
+
+              <li class="service swiper-slide">
+                <img src="" alt="Service Image" class="service__image" />
+                <h3 class="service__title">Наименование</h3>
+                <p class="service__text">Текстовое описание</p>
+              </li>
+
+              <li class="service swiper-slide">
+                <img src="" alt="Service Image" class="service__image" />
+                <h3 class="service__title">Наименование</h3>
+                <p class="service__text">Текстовое описание</p>
+              </li>
+              <!-- End -->
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -359,6 +464,8 @@
         </nav>
       </div>
     </footer>
+
+    <script src="scripts/swiper-bundle.min.js" defer></script>
     <script src="scripts/index.js" defer></script>
   </body>
 </html>
