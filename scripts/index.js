@@ -1,11 +1,33 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Шапка
-    const header = document.querySelector("#header");
-    // Навигационное меню
-    const navbar = header.querySelector("#navbar");
+    // Вкключение скролла
+    const scrollOn = () => document.body.style.overflow = "";
 
-    // Слайдер
+    // Отключение скролла
+    const scrollOff = () => document.body.style.overflow = "hidden";
+
+    // Триггеры модального окна
+    const modal_buttons = document.querySelectorAll(".js-modal-button");
+
+    // Модальное окно
+    const modal = document.querySelector("#modal");
+
+    modal_buttons.forEach((modal_button) => {
+        modal_button.addEventListener("click", () => {
+            scrollOff();
+            modal.classList.add("_active");
+        });
+    })
+
+    // Закрытие модального окна при клике вне окна
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            scrollOn();
+            modal.classList.remove("_active");
+        }
+    })
+
+    // Слайдер - базовые настройки
     const services_slider = new Swiper(".services", {
         slidesPerView: 1,
         spaceBetween: 30,
